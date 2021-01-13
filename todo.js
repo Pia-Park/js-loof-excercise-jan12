@@ -15,20 +15,22 @@ while(input.toLowerCase() !== 'q'){
         input = prompt('Enter the list you want to add', '');
         todos.push(input);
         console.log('Your list is added!');
-        input = prompt('What would you like to do?', '');
+        // input = prompt('What would you like to do?', '');
     } else if(input.toLowerCase() === 'list'){
         console.log("===Here is youre to do list!===")
         todos.forEach(list =>{
             console.log(todos.indexOf(list) + " " + list);
         });
         console.log("===============================")
-        input = prompt('What would you like to do?', '');
+        // input = prompt('What would you like to do?', '');
     } else if(input.toLowerCase() === 'delete'){
         let deleteList = prompt('Enter the number of list that you want to delete.', '');
         todos.splice(todos.indexOf(deleteList), 1);
         console.log("your list is deleted!");
-        input = prompt('What would you like to do?', '');
+        // input = prompt('What would you like to do?', '');
     }
+    input = prompt('What would you like to do?', '');
+
 
 }
 
